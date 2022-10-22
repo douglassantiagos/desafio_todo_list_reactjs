@@ -40,6 +40,12 @@ Todo é uma aplicação de controle de tarefas no estilo **to-do list**, que con
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/FU75JFvbFKPFXI1Ebr4G13/ToDo-List-(Copy)?node-id=0%3A13). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
+## :link: Link
+
+<a href="https://pokedex-project-reactjs.vercel.app/" rel="nofollow">
+  <img src="https://user-images.githubusercontent.com/71772559/178192066-d52e0cf7-906e-4baa-80f3-4b49dde153c0.png" style="max-width: 100%;">
+</a>
+
 ---
 
 Feito com ♥ by Douglas Santiago :wave:

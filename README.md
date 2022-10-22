@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="drmoney" title="dtmoney" src="https://imgur.com/alT4RZF.png" width="220px" />
+  <img alt="ToDoList" title="ToDoList" src="https://imgur.com/ga04E8w.png" width="220px" />
 </h1>
 
 <p align="center">
@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <img alt="dtmoney" src="https://imgur.com/U7Y0k2O.png" width="100%">
+  <img alt="toDoList" src="https://imgur.com/m3wQJUJ.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias

@@ -5,7 +5,7 @@ import { Header } from './components/Header';
 import { InfoList } from './components/InfoList';
 import { InputBar } from './components/InputBar';
 import { Task } from './components/Task';
-import { Withoutlist } from './components/WithoutList';
+import { ListEmpty } from './components/ListEmpty';
 
 import './global.css'
 import styles from './App.module.css'
@@ -92,7 +92,7 @@ export function App() {
         <InputBar handleCreateNewTask={handleCreateNewTask} />
         <InfoList amountTaskCreated={amountTaskCreated} amountTaskCompleted={amountTaskCompleted} />      
         { taskList.length === 0 ? (
-          <Withoutlist />
+          <ListEmpty />
         ) : (
           <Task
             task={taskList} 

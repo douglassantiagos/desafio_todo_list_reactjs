@@ -1,9 +1,9 @@
-import styles from './Withoutlist.module.css';
+import styles from './ListEmpty.module.css';
 import Clipboard from '../assets/clipboard.svg'
 
-export function Withoutlist() {
+export function ListEmpty() {
   return (
-    <div className={styles.withoutList}>
+    <div className={styles.listEmpty}>
       <span></span>
       <div>
         <img src={Clipboard} alt="Icon List" />

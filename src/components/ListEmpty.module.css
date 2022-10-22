@@ -1,10 +1,10 @@
-.withoutList {
+.listEmpty {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.withoutList div {
+.listEmpty div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@
   margin: auto;  
 }
 
-.withoutList span {
+.listEmpty span {
   width: 736px;
   height: 4.5rem;
   background: transparent;
@@ -21,17 +21,17 @@
   margin-top: 1.5rem;
 }
 
-.withoutList img {
+.listEmpty img {
   width: 3.5rem;
   height: 3.5rem;
   margin-top: 4rem;
 }
 
-.withoutList strong, p {
+.listEmpty strong, p {
   color: var(--gray-300);
   line-height: 1.4rem;
 }
 
-.withoutList strong {
+.listEmpty strong {
   margin-top: 1rem;
 }

@@ -8,6 +8,7 @@ import { Task } from './components/Task';
 import { Withoutlist } from './components/WithoutList';
 
 import './global.css'
+import styles from './App.module.css'
 
 export interface TaskProps {  
   id: string;
@@ -86,17 +87,20 @@ export function App() {
   return (
     <>
       <Header />
-      <InputBar handleCreateNewTask={handleCreateNewTask} />
-      <InfoList amountTaskCreated={amountTaskCreated} amountTaskCompleted={amountTaskCompleted} />      
-      { taskList.length === 0 ? (
-        <Withoutlist />
-      ) : (
-        <Task
-          task={taskList} 
-          onDeleteTask={deleteTask} 
-          onCompleteTask={completeTask}
-        />        
-      )}    
+
+      <div className={styles.wrapper}>
+        <InputBar handleCreateNewTask={handleCreateNewTask} />
+        <InfoList amountTaskCreated={amountTaskCreated} amountTaskCompleted={amountTaskCompleted} />      
+        { taskList.length === 0 ? (
+          <Withoutlist />
+        ) : (
+          <Task
+            task={taskList} 
+            onDeleteTask={deleteTask} 
+            onCompleteTask={completeTask}
+          />        
+        )}
+      </div>
     </>
   )
 }

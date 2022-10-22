@@ -1,0 +1,30 @@
+.infoList {
+  display: flex;
+  justify-content: space-between;
+  width: 46rem;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.infoList div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.infoList div:nth-child(1) {
+  color: var(--blue);
+}
+
+.infoList div:nth-child(2) {
+  color: var(--purple);
+}
+
+.infoList div span {
+  background: var(--gray-400);
+  color: var(--gray-100);
+  padding: 0.15rem 0.6rem;
+  border-radius: 62.4375rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}

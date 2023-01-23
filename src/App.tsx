@@ -9,6 +9,7 @@ import { ListEmpty } from './components/ListEmpty';
 
 import './global.css'
 import styles from './App.module.css'
+import { Modal } from './components/Modal';
 
 export interface TaskProps {  
   id: string;
@@ -29,6 +30,10 @@ export function App() {
       isCompleted: false
     },
   ]);  
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  console.log(modalIsOpen)
+  console.log(taskList)
 
   function handleCreateNewTask(title: string) {
     addToLocalStorage([
@@ -47,6 +52,7 @@ export function App() {
     })
 
     addToLocalStorage(tasksWithoutDeleteOne);
+    setModalIsOpen(false);
   }
 
   function completeTask(taskID: string) {
@@ -95,11 +101,13 @@ export function App() {
           <ListEmpty />
         ) : (
           <Task
-            task={taskList} 
-            onDeleteTask={deleteTask} 
+            task={taskList}
             onCompleteTask={completeTask}
-          />        
-        )}
+            onDeleteTask={deleteTask}
+            modalIsOpen={modalIsOpen} 
+            setModalIsOpen={setModalIsOpen}
+          />
+        )}               
       </div>
     </>
   )

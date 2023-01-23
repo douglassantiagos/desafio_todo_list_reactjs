@@ -9,8 +9,9 @@
   flex-direction: column;
   align-items: center;
   width: 46rem;
-  margin: auto;  
+  margin: auto;
 }
+
 
 .listEmpty span {
   width: 736px;
@@ -34,4 +35,14 @@
 
 .listEmpty strong {
   margin-top: 1rem;
+}
+
+@media (max-width: 376px) {
+  .listEmpty {
+    overflow-x: hidden;
+  }
+
+  .listEmpty div {
+    width: 305px;
+  }
 }

@@ -37,12 +37,19 @@
   margin-top: 1rem;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 765px) {
   .listEmpty {
     overflow-x: hidden;
   }
 
   .listEmpty div {
-    width: 305px;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 376px) { 
+  .listEmpty div {
+    width: 80vw;
+    text-align: center;
   }
 }
